@@ -1,0 +1,20 @@
+<div class="container">
+    <br />
+    <form action="/pessoaForm/pessoa/operar" method="POST">
+        <input type="hidden" name="_id" value="{{pessoa._id}}"/>
+        <div class="form-group">
+            <label for="Nomes">Nomes:</label>
+            <input type="nomes" class="form-control" id="nomes" name="nomes" value="{{pessoa.nomes}}">
+        </div>
+        <div class="form-group">
+            <label for="sobrenomes">Sobrenomes:</label>
+            <input type="text" class="form-control" id="sobrenomes" name="sobrenomes" value="{{pessoa.sobrenomes}}">
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade:</label>
+            <input type="number" class="form-control" id="idade" name="idade" value="{{pessoa.idade}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Aceitar</button>
+        <a href="/" class="btn btn-danger">Cancelar</a>
+    </form>
+</div>
